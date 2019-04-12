@@ -1,0 +1,47 @@
+/**app.scss**/
+@import "colorui.scss";
+.viewy {
+    height: 13vh;
+    display:inline-block;
+    white-space: nowrap;
+    width: 23vw;
+    margin-left: 1.6vw;
+    margin-bottom: 1vh;
+}
+.schedule_show {
+    width: 100vw;
+    height: 84vh;
+}
+.schedule_hide {
+    display: none !important;
+}
+.team_cell {
+    display: inline-block;
+    width: 11vw;
+    height: 12vw;
+    //border: 1px solid red;
+}
+.schdule2 {
+    width:100%;
+    height: 4.5vh;
+    display:table;
+    margin-bottom: 6vh
+}
+.schdule3 {
+    width:100%;
+    height: 4.5vh;
+    display:table;
+    margin-bottom: 16.6vh
+}
+.team_name {
+    float: left;
+    text-align:center;
+    writing-mode:vertical-rl;
+}
+image {
+    transform:rotate(90deg);
+    width: 9vw;
+    height: 6vw;
+    margin-top:2vw;
+    margin-left:-1vw
+}
