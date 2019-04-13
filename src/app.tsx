@@ -20,6 +20,7 @@ class App extends Component {
    */
   config: Config = {
     pages: [
+      'pages/login/login',
       'pages/index/index',
       'pages/min/min',
       'pages/ti/ti'

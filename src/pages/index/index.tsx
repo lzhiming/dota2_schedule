@@ -1,5 +1,5 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, ScrollView, Text, Image} from '@tarojs/components'
+import { View, Button, Text, Image} from '@tarojs/components'
 import './index.scss'
 import ico_Alliance from '../../image/Alliance.png'
 import ico_Boom from '../../image/BOOM.png'
@@ -397,22 +397,19 @@ export default class Index extends Component {
     return (
       <View className='index'>
       <View  className='grid col-2 margin-bottom text-center'>
-        <View  className={this.state.tab_flg == 1?'bg-cyan padding':'bg-cyan padding light'} data-id={1} onClick={this.tabChange}>
+        <View  className={this.state.tab_flg == 1?'bg-cyan padding-xs':'bg-cyan padding-xs light'} data-id={1} onClick={this.tabChange}>
           胜者组
         </View>
-        <View  className={this.state.tab_flg == 2?'bg-cyan padding':'bg-cyan padding light'} data-id={2} onClick={this.tabChange}>
+        <View  className={this.state.tab_flg == 2?'bg-cyan padding-xs':'bg-cyan padding-xs light'} data-id={2} onClick={this.tabChange}>
           败者组
         </View>
       </View>
         {schedule_win}
         {schedule_lose}
-      <View className="" style="height:5.6vh;">
-        <View className='grid col-4 grid-square'>
-          <View className='bg-blue'>button1</View>
-          <View className='bg-blue light'  onClick={this.toMin}>button2</View>
-          <View className='bg-blue light'  onClick={this.toTi}>button3</View>
-          <View className='bg-blue light'>敬请期待</View>
-        </View>
+      <View className="" style="height:8vh;">
+        <Button className="" style='width:33vw; height: 7.8vh;display:inline'>Button1</Button>
+        <Button className="" style='width:33vw; height: 7.8vh;display:inline'>Button1</Button>
+        <Button className="" style='width:33vw; height: 7.8vh;display:inline'>Button1</Button>
       </View>
       </View>
     )
